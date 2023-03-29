@@ -1,0 +1,96 @@
+#dice-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1em;
+    position: relative;
+    margin-top: 20px;
+}
+
+/* .dice{
+    padding:1.2em;
+    width:1em;
+    height:1em;
+    border: solid;
+    border-radius:1em;
+  } */
+
+.dice {
+    position: absolute;
+    display: inline-block;
+    min-width: 50px;
+    height: 50px;
+    border: 1px solid #c5324f;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: bold;
+    background-color: #FF5368;
+    color: white;
+    border-radius: 0.3em;
+    -webkit-box-shadow: 10px 10px 44px -9px rgba(197,50,79,1);
+    -moz-box-shadow: 10px 10px 44px -9px rgba(197,50,79,1);
+    box-shadow: 2px 2px 10px 0px rgba(197,50,79,1);
+}
+
+.dice-dot {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .dice-1 {
+    top: 40%;
+    left: 40%;
+  }
+  
+  .dice-2 {
+    top: 25%;
+    left: 25%;
+  }
+  
+  .dice-3 {
+    top: 25%;
+    left: 55%;
+  }
+  
+  .dice-4 {
+    top: 55%;
+    left: 25%;
+  }
+  
+  .dice-5 {
+    top: 55%;
+    left: 55%;
+  }
+  
+  .dice-6 {
+    top: 25%;
+    left: 40%;
+  }
+  
+  
+
+/* .dice::before,
+.dice::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.dice::before {
+  top: 10%;
+  left: 10%;
+}
+
+.dice::after {
+  bottom: 10%;
+  right: 10%;
+} */

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Lanzar Dados</title>
+	<style>
+		.dado {
+			width: 50px;
+			height: 50px;
+			background-color: red;
+			display: inline-block;
+			margin: 10px;
+			border-radius: 10px;
+			position: relative;
+		}
+		.dado .punto {
+			width: 10px;
+			height: 10px;
+			background-color: white;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<button onclick="lanzarDados()">Lanzar Dados</button>
+	<div id="contenedorDados"></div>
+
+	<script>
+		function lanzarDados() {
+			const contenedorDados = document.getElementById("contenedorDados");
+			contenedorDados.innerHTML = "";
+
+			for(let i = 0; i < 6; i++) {
+				let dado = document.createElement("div");
+				dado.classList.add("dado");
+				let puntos = [];
+				for(let j = 0; j < Math.floor(Math.random() * 6) + 1; j++) {
+					let punto = document.createElement("div");
+					punto.classList.add("punto");
+					dado.appendChild(punto);
+					puntos.push(punto);
+				}
+				contenedorDados.appendChild(dado);
+				console.log(puntos.length);
+			}
+		}
+	</script>
+</body>
+</html>

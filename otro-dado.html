@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lanzar Dados</title>
+    <style>
+      .dado {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        margin: 10px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="lanzarDados()">Lanzar Dados</button>
+    <div id="contenedorDados"></div>
+    <script>
+      function lanzarDados() {
+        var contenedorDados = document.getElementById("contenedorDados");
+        contenedorDados.innerHTML = "";
+        for (var i = 0; i < 6; i++) {
+          var valorDado = Math.ceil(Math.random() * 6);
+          var dado = document.createElement("div");
+          dado.classList.add("dado");
+          for (var j = 0; j < valorDado; j++) {
+            var punto = document.createElement("div");
+            punto.classList.add("punto");
+            dado.appendChild(punto);
+          }
+          contenedorDados.appendChild(dado);
+        }
+      }
+    </script>
+  </body>
+</html>
