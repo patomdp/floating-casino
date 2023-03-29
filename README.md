@@ -6,5 +6,11 @@ Intenta optimizar la cantidad de líneas de código lo más posible, por ejemplo
 
 ### Aplicaciones:
 - Lanzador de dados aleatorio del 1 al 6:
+- Puede elegirse entre vista de puntos y vista de numeros
+- imagen 360 generada por IA como background
  small-roll-dice.html es el que funciona
+
+### TODO:
+- agregar página de inicio con botonera para navegar a las otras páginas
+- agregar versión mobile de small-roll-dice
 
