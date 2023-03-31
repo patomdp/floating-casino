@@ -13,4 +13,5 @@ Intenta optimizar la cantidad de líneas de código lo más posible, por ejemplo
 ### TODO:
 - agregar página de inicio con botonera para navegar a las otras páginas
 - agregar versión mobile de small-roll-dice
+- APP: Hacer una app de mayor o menor pero apostando "dinero de mentira"
 
